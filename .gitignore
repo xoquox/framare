@@ -1,0 +1,12 @@
+# Local SDKs, downloads, upstream checkouts, and test results.
+/.local/
+/result
+/result-*
+/build/
+/RPMS/
+*.rpm
+# Private pairing identities must never enter version control.
+config.json
+unframeo-config*.json
+*.pem
+*.key
