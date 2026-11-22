@@ -3,7 +3,7 @@ set -euo pipefail
 project_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 source_dir="$project_dir/.local/upstream/unframeo"
 output_dir="$project_dir/.local/transport-check"
-expected_revision=$(cat "$project_dir/nix/unframeo-revision")
+expected_revision=$(cat "$project_dir/upstream/unframeo-revision")
 if [[ $(git -C "$source_dir" rev-parse HEAD) != "$expected_revision" ]] ||
    [[ -n $(git -C "$source_dir" status --porcelain --untracked-files=normal) ]]; then
   printf 'Expected a clean unframeo checkout at %s\n' "$expected_revision" >&2

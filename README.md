@@ -6,7 +6,7 @@ Technischer Paketname: `harbour-framare`.
 **Stand: Entwicklungsumgebung eingerichtet und mit SDK-Test-RPMs für aarch64
 und armv7hl geprüft. Es gibt noch keine Framare-App und kein Framare-RPM.**
 
-Das Repository enthält Nix-Konfigurationen, SDK-Starter, Buildprüfungen und
+Das Repository enthält SDK-Hilfsskripte, Buildprüfungen und
 die technischen Befunde zum festgelegten
 [unframeo](https://github.com/borje/unframeo)-Quellstand.
 

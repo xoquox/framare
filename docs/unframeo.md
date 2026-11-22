@@ -3,7 +3,7 @@
 Quelle: https://github.com/borje/unframeo
 
 Geprüfter Commit: `149f60b5ac7702f2cbb0761185b0d49a7431bf3f`
-(`nix/unframeo-revision`). Keine Upstream-Dateien verändert. Diese Notizen
+(`upstream/unframeo-revision`). Keine Upstream-Dateien verändert. Diese Notizen
 beschreiben die Grundlage für eine spätere Integration; Framare besitzt noch
 keinen Transportadapter.
 

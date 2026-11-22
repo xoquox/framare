@@ -1,7 +1,5 @@
 # Local SDKs, downloads, upstream checkouts, and test results.
 /.local/
-/result
-/result-*
 /build/
 /RPMS/
 *.rpm

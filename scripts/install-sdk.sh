@@ -14,7 +14,7 @@ docker info >/dev/null
 mkdir -p .local/logs
 log_file="$project_dir/.local/logs/sdk-install.log"
 printf 'Installing SDK as normal user. Log: %s\n' "$log_file"
-bash scripts/sdk-env.sh -c 'QT_QPA_PLATFORM=minimal ./.local/downloads/SailfishSDK-3.13.5-linux64-online.run --verbose non-interactive=1 accept-licenses=1 build-engine-type=docker' > "$log_file" 2>&1
+QT_QPA_PLATFORM=minimal ./.local/downloads/SailfishSDK-3.13.5-linux64-online.run --verbose non-interactive=1 accept-licenses=1 build-engine-type=docker > "$log_file" 2>&1
 # The installer can exit 0 even when its prerequisite check rejects Docker.
 if [[ ! -x "$HOME/SailfishOS/bin/sfdk" ]]; then
   tail -n 35 "$log_file" >&2

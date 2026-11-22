@@ -2,7 +2,7 @@
 set -uo pipefail
 missing=0
 report_missing() { printf 'FEHLT: %s\n' "$*"; missing=$((missing + 1)); }
-for tool in git nix nix-build curl python3 ssh rsync; do
+for tool in git curl python3 ssh rsync; do
   if command -v "$tool" >/dev/null; then
     printf 'OK: %s\n' "$tool"
   else
@@ -30,7 +30,7 @@ else
 fi
 sdk_root=${FRAMARE_SDK_ROOT:-"$HOME/SailfishOS"}
 if [[ -x "$sdk_root/bin/sfdk" ]]; then
-  printf 'GEFUNDEN: sfdk unter %s; Start und Targets separat in der FHS-Umgebung prüfen\n' "$sdk_root"
+  printf 'GEFUNDEN: sfdk unter %s; Start und Targets separat prüfen\n' "$sdk_root"
 else
   report_missing "Sailfish SDK unter $sdk_root"
 fi
