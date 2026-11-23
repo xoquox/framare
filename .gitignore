@@ -5,6 +5,19 @@
 *.rpm
 # Private pairing identities must never enter version control.
 config.json
+identity.json
 unframeo-config*.json
 *.pem
 *.key
+# Generated application build output.
+/harbour-framare
+/harbour-framare.desktop
+/Makefile
+/.qmake.stash
+/.qmake.cache
+/*.o
+/moc_*.cpp
+/main.moc
+/documentation.list
+/translations/*.qm
+/translations/harbour-framare.ts
